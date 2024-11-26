@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import { GlobeDemo } from './Globe';
 
 export default function HeroSection() {
     return (
         <section
-            className="w-full text-left flex px-20 flex-col min-h-screen justify-center gap-10 relative"
+            className="w-full text-left flex px-20 flex-col min-h-screen justify-center gap-10 relative overflow-x-clip"
         >
             <div
                 className="flex flex-col"
@@ -104,24 +105,9 @@ export default function HeroSection() {
             >
                 Start Saving
             </motion.button>
-            <motion.img
-                src={'hero1.svg'}
-                alt=""
-                width={0}
-                height={0}
-                className="w-96 h-full absolute right-40"
-                initial={{
-                    translateX: 60,
-                    opacity: 0,
-                }}
-                animate={{
-                    translateX: 0,
-                    opacity: 1,
-                }}
-                transition={{
-                    duration: 2,
-                }}
-            />
+            <div className='absolute left-60 w-full h-screen -z-50 top-60'>
+                <GlobeDemo />
+            </div>
         </section>
     )
 }
