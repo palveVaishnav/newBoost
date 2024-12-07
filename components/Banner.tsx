@@ -27,7 +27,7 @@ export default function Banner() {
         <div className="w-full p-4">
             <div className="relative bg-white rounded-3xl text-black h-88 flex overflow-hidden">
                 {/* Decorative Elements */}
-                <div className="h-full overflow-hidden">
+                <div className="hidden md:block h-full overflow-hidden">
                     <Image
                         src={"https://cdn.prod.website-files.com/665f27834e206c9660b3a626/6661b7e2cc9e612f00511849_half-orbit.svg"}
                         width={0}
@@ -40,7 +40,7 @@ export default function Banner() {
                 <div className=" w-full p-8 md:p-12 bg-red-0" ref={ref}>
                     {isInView &&
                         <>
-                            <motion.h2 className="text-[3em] font-mono font-medium mb-16 max-w-4xl"
+                            <motion.h2 className="text-[2em] md:text-[3em] font-mono font-medium mb-16 max-w-4xl"
 
                                 initial={{
                                     y: 40,
@@ -88,7 +88,6 @@ export default function Banner() {
                     }
                 </div>
             </div>
-
         </div>
     )
 }

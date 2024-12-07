@@ -78,7 +78,7 @@ export default function Features() {
                             EFFORTLESS COST SAVINGS WITH ENTERPRISE GRADE SECURITY
                         </span>
                         <p className="max-w-3xl mx-auto text-gray-600">
-                            North automates your full cost savings & financial operations in the cloud. Enjoy the deepest savings in the AWS & Google Cloud ecosystem while retaining on-demand like flexibility. We work with some of the most security sensitive companies in the world, and built a proprietary platform for discount sharing that lowers your costs while keeping your cloud systems secure at all times.
+                            100xBoost automates your full cost savings & financial operations in the cloud. Enjoy the deepest savings in the AWS & Google Cloud ecosystem while retaining on-demand like flexibility. We work with some of the most security sensitive companies in the world, and built a proprietary platform for discount sharing that lowers your costs while keeping your cloud systems secure at all times.
                         </p>
                     </motion.div>
                 }

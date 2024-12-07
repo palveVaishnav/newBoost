@@ -45,7 +45,7 @@ export default function FeatureCards() {
     return (
         <section
             ref={container}
-            className="w-full px-20 grid gap-40 relative"
+            className="w-full px-4 md:px-20 grid gap-40 relative"
         >
             {FeatureList.map((feature, idx) => {
                 // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -56,7 +56,7 @@ export default function FeatureCards() {
                 return (
                     <motion.div
                         key={idx}
-                        className="bg-green-4000 h-screen flex justify-center items-center"
+                        className="h-screen flex justify-center items-center"
                         style={{
                             position: 'sticky',
                             top: 40 * idx,
@@ -64,7 +64,7 @@ export default function FeatureCards() {
                         }}
                     >
                         <motion.div
-                            className={`flex items-center p-20 rounded-xl bg-[#1e2125] border h-fit`}
+                            className={`flex items-center md:p-20 rounded-xl bg-[#1e2125] border h-fit`}
                             initial={{
                                 top: 80 * idx,
                             }}
@@ -72,7 +72,7 @@ export default function FeatureCards() {
                             transition={{}}
                         >
                             <div className="w-1/2 p-2">
-                                <h2 className="text-[3em]">{feature.title}</h2>
+                                <h2 className="text-[2em] md:text-[3em]">{feature.title}</h2>
                                 <p className="text-md text-gray-400">{feature.description}</p>
                             </div>
                             <div className="w-1/2">

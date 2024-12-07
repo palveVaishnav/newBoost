@@ -88,8 +88,8 @@ export default function Testimonials() {
                         >OUR CUSTOMERS LOVE US</motion.h2>
                     </div>
                 }
-                <Carousel className="w-full p-10" ref={cardContainer}>
-                    <CarouselContent className="w-1/2 p-10">
+                <Carousel className="w-full md:p-10" ref={cardContainer}>
+                    <CarouselContent className="md:w-1/2 md:p-10">
                         {testimonials.map((testimonial, index) => (
                             <CarouselItem className="w-1/2" key={index}>
                                 {cardsInView &&

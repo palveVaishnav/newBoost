@@ -4,13 +4,13 @@ import { GlobeDemo } from './Globe';
 export default function HeroSection() {
     return (
         <section
-            className="w-full text-left flex px-20 flex-col min-h-screen justify-center gap-10 relative overflow-x-clip"
+            className="w-full text-left flex md:px-20 flex-col min-h-screen justify-center gap-10 relative overflow-x-clip px-4"
         >
             <div
                 className="flex flex-col"
             >
                 <div
-                    className="text-xl"
+                    className="md:text-xl"
                 >{"Humanless cloud optimization".split(" ").map((el, idx) => (
                     <motion.span
                         key={idx}
@@ -35,7 +35,7 @@ export default function HeroSection() {
                 ))}</div>
 
                 <div
-                    className="text-[4em] uppercase max-w-2xl"
+                    className="text-[2em] md:text-[4em] uppercase max-w-2xl px-4"
                 >{"Making Cloud Cheaper for you".split("").map((el, idx) => (
                     <motion.span
                         key={idx}
@@ -74,6 +74,7 @@ export default function HeroSection() {
                 transition={{
                     duration: 2,
                 }}
+		className="px-2"
             >
                 Cut your cloud bill by up to 50% with our enterprise grade AI-driven automation.<br />
                 No risk, no contracts, and no technical work required.
@@ -105,7 +106,7 @@ export default function HeroSection() {
             >
                 Start Saving
             </motion.button>
-            <div className='absolute left-60 w-full h-screen -z-50 top-60'>
+            <div className="absolute right-0 md:left-60 w-full h-screen -z-50 top-60">
                 <GlobeDemo />
             </div>
         </section>
