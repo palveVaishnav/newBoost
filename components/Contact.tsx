@@ -9,7 +9,7 @@ export default function Contact() {
     const bannerVisible = useInView(bannerContainer);
 
     return (
-        <div className="w-full px-4 md:py-16 md:py-24 mb-10">
+        <div className="w-full px-4 md:py-16 mb-10">
             <Card className="max-w-6xl mx-auto bg-gray-900/50 border-gray-800 overflow-hidden relative md:px-20 md:py-16" ref={bannerContainer}>
                 <div className="absolute inset-0 bg-purple-500/10 blur-3xl" />
                 {bannerVisible &&

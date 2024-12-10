@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GlobeDemo } from './Globe';
+import { Globe } from './Globe';
 
 export default function HeroSection() {
     return (
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 transition={{
                     duration: 2,
                 }}
-		className="px-2"
+                className="px-2"
             >
                 Cut your cloud bill by up to 50% with our enterprise grade AI-driven automation.<br />
                 No risk, no contracts, and no technical work required.
@@ -106,8 +106,8 @@ export default function HeroSection() {
             >
                 Start Saving
             </motion.button>
-            <div className="absolute right-0 md:left-60 w-full h-screen -z-50 top-60">
-                <GlobeDemo />
+            <div className="absolute right-0 md:-right-40 w-full h-screen -z-50 top-60">
+                <Globe />
             </div>
         </section>
     )
