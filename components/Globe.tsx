@@ -9,7 +9,7 @@ export const World = dynamic(() => import("./ui/globe").then((m) => m.World), {
 export function GlobeDemo() {
     const globeConfig = {
         pointSize: 4,
-        globeColor: "#062056",
+        globeColor: "#333333",
         showAtmosphere: true,
         atmosphereColor: "#FFFFFF",
         atmosphereAltitude: 0.1,

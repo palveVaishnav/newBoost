@@ -5,17 +5,14 @@ import Image from "next/image";
 export default function Banner() {
     const points = [
         {
-            number: "01.",
             description:
                 "Thousands of products and endless pricing programs can be confusing, leading to wasted expenses. On average, companies waste 30% or more on cloud spend because of financial mismanagement.",
         },
         {
-            number: "02.",
             description:
                 "Cloud architecture changes constantly as the business evolves. This drives financial inefficiency as vendor commitment based pricing programs limit your flexibility.",
         },
         {
-            number: "03.",
             description:
                 "Implementing healthy cloud accounting and FinOps practices traditionally demands significant engineering hours.",
         },
@@ -75,10 +72,10 @@ export default function Banner() {
                                         }}
                                     >
                                         <hr />
-                                        <h3 className="text-[4em] font-mono text-gray-700">
-                                            {point.number}
+                                        <h3 className="text-2xl md:text-[4em] font-mono text-gray-700">
+                                            {"0" + (1 + idx) + "."}
                                         </h3>
-                                        <p className="text-xl text-gray-600 leading-relaxed">
+                                        <p className="md:text-xl text-gray-600 leading-relaxed">
                                             {point.description}
                                         </p>
                                     </motion.div>

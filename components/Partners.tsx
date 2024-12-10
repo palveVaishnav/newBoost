@@ -5,22 +5,20 @@ import { useRef } from "react";
 
 export default function Partners() {
     const logos = [
-        { name: "Radar", src: "/client.svg" },
-        { name: "Apporchid", src: "/client.svg" },
-        { name: "Veho", src: "/client.svg" },
-        { name: "LOGILE", src: "/client.svg" },
-        { name: "Miso", src: "/client.svg" },
-        { name: "Brave", src: "/client.svg" },
-        { name: "Artisight", src: "/client.svg" },
-        { name: "Data Biologics", src: "/client.svg" },
-        { name: "Inbox Health", src: "/client.svg" },
-        { name: "Stay N Touch", src: "/client.svg" },
-        { name: "Spring", src: "/client.svg" },
-        { name: "Larky", src: "/client.svg" },
-        { name: "BoomPop", src: "/client.svg" },
-        { name: "Cartwheel", src: "/client.svg" },
-        { name: "Atlas", src: "/client.svg" },
-        { name: "Air", src: "/client.svg" },
+        { name: "Radar", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-5-1536x960.png" },
+        { name: "Apporchid", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-4-1536x960.png" },
+        { name: "Veho", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-2-1536x960.png" },
+        { name: "LOGILE", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-3-1536x960.png" },
+        { name: "Miso", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-6-1536x960.png" },
+        { name: "Brave", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-7-1536x960.png" },
+        { name: "Artisight", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-8-1536x960.png" },
+        { name: "Data Biologics", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-9-1536x960.png" },
+        { name: "Inbox Health", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-10-1536x960.png" },
+        { name: "Stay N Touch", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-11-1536x960.png" },
+        { name: "Spring", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-12-1536x960.png" },
+        { name: "Larky", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-13-1536x960.png" },
+        { name: "BoomPop", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-14-1536x960.png" },
+        { name: "Cartwheel", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-19-1536x960.png" },
     ]
 
     const ref = useRef(null)
@@ -35,7 +33,7 @@ export default function Partners() {
                     {isInView && logos.map((logo, idx) => (
                         <motion.div
                             key={idx}
-                            className="w-full flex items-center justify-center group text-white"
+                            className="w-full flex items-center justify-center group"
                             initial={{
                                 translateY: 20,
                                 opacity: 0,
@@ -54,9 +52,10 @@ export default function Partners() {
                             <Image
                                 src={logo.src}
                                 alt={`${logo.name} logo`}
-                                className="h-10 w-auto object-contain opacity-75 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0"
-                                width={0}
-                                height={0}
+                                // mix-blend not working !!!?
+                                className="h-28 w-40 opacity-75 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0 rounded-xl mix-blend-multiply md:w-auto md:h-auto"
+                                width={130}
+                                height={130}
                             />
                         </motion.div>
                     ))}

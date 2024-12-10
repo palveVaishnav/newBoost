@@ -64,7 +64,7 @@ export default function FeatureCards() {
                         }}
                     >
                         <motion.div
-                            className={`flex items-center md:p-20 rounded-xl bg-[#1e2125] border h-fit`}
+                            className={`block sm:flex justify-items-center items-center p-5 sm:p-10 md:p-20 rounded-xl bg-[#1e2125] border h-fit`}
                             initial={{
                                 top: 80 * idx,
                             }}
@@ -73,7 +73,7 @@ export default function FeatureCards() {
                         >
                             <div className="w-1/2 p-2">
                                 <h2 className="text-[2em] md:text-[3em]">{feature.title}</h2>
-                                <p className="text-md text-gray-400">{feature.description}</p>
+                                <p className="text-md text-gray-400 hidden sm:block">{feature.description}</p>
                             </div>
                             <div className="w-1/2">
                                 <Image
