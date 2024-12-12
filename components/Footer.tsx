@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { motion, useInView } from 'framer-motion';
 import { useRef } from "react";
@@ -50,17 +49,9 @@ export default function Footer() {
                                 duration: 2,
                             }}
                         >
-                            <Link href="/" className="inline-block">
-                                <Image
-                                    src="/logo.svg"
-                                    alt="North"
-                                    width={400}
-                                    height={200}
-                                    className=""
-                                />
-                            </Link>
-                            <p className="text-xl font-bold text-gray-200">
-                                A Product from 100xDevs.
+                            <span className="text-white text-3xl font-bold" >100xBoost</span>
+                            <p className="text-xl text-gray-200">
+                                A Product by 100xDevs.
                             </p>
                         </motion.div>
                         <div className="grid grid-cols-2 gap-8 lg:col-span-2">

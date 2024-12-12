@@ -9,12 +9,6 @@ export default function Partners() {
         { name: "Apporchid", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-4-1536x960.png" },
         { name: "Veho", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-2-1536x960.png" },
         { name: "LOGILE", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-3-1536x960.png" },
-        { name: "Miso", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-6-1536x960.png" },
-        { name: "Brave", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-7-1536x960.png" },
-        { name: "Artisight", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-8-1536x960.png" },
-        { name: "Data Biologics", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-9-1536x960.png" },
-        { name: "Inbox Health", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-10-1536x960.png" },
-        { name: "Stay N Touch", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-11-1536x960.png" },
         { name: "Spring", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-12-1536x960.png" },
         { name: "Larky", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-13-1536x960.png" },
         { name: "BoomPop", src: "https://fabrikbrands.com/wp-content/uploads/Logos-of-Multinational-Companies-14-1536x960.png" },
@@ -53,7 +47,7 @@ export default function Partners() {
                                 src={logo.src}
                                 alt={`${logo.name} logo`}
                                 // mix-blend not working !!!?
-                                className="h-28 w-40 opacity-75 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0 rounded-xl mix-blend-multiply md:w-auto md:h-auto"
+                                className="h-16 w-40 opacity-75 grayscale transition-all duration-200 group-hover:opacity-100 group-hover:grayscale-0 rounded-xl mix-blend-multiply md:w-auto md:h-28"
                                 width={130}
                                 height={130}
                             />

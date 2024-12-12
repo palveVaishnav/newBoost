@@ -10,8 +10,8 @@ export default function Contact() {
 
     return (
         <div className="w-full px-4 md:py-16 mb-10">
-            <Card className="max-w-6xl mx-auto bg-gray-900/50 border-gray-800 overflow-hidden relative md:px-20 md:py-16" ref={bannerContainer}>
-                <div className="absolute inset-0 bg-purple-500/10 blur-3xl" />
+            <Card className="max-w-6xl mx-auto bg-[#00ffd1]/50 border-gray-800 overflow-hidden relative md:px-20 md:py-16" ref={bannerContainer}>
+                <div className="absolute inset-0 bg-[#00ffd1]/10 blur-3xl" />
                 {bannerVisible &&
                     <motion.div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8"
                         initial={{
@@ -27,10 +27,10 @@ export default function Contact() {
                         }}
                     >
                         <div className="space-y-4">
-                            <h2 className="text-3xl md:text-5xl text-white font-mono uppercase">
+                            <h2 className="text-3xl md:text-5xl font-mono uppercase">
                                 Ready to Join ?
                             </h2>
-                            <p className="text-gray-400 max-w-xl">
+                            <p className="text-black max-w-xl">
                                 Get in touch with our team to learn about your savings potential or ask us anything you&apos;d like!
                             </p>
                         </div>
@@ -51,16 +51,16 @@ export default function Contact() {
 
                         >
                             <Button
-                                variant="outline"
-                                className="border-purple-500 hover:bg-purple-500/10 text-black hover:text-white"
+                                variant='default'
+                                className=""
                             >
                                 GET STARTED
                             </Button>
                             <Button
-                                variant={'outline'}
-                                className="bg-white text-gray-900 hover:bg-gray-100 hover:bg-purple-500/10 hover:text-white"
+                                variant='outline'
+                                className="hover:bg-primary bg-inherit border-black hover:text-white group transition-all ease-in-out 2s"
                             >
-                                <ArrowRight className="mr-2 h-4 w-4" />
+                                <ArrowRight className="mr-2 h-4 w-4 group-hover:translate-x-2 transition-all ease-in-out 2s" />
                                 BOOK A DEMO
                             </Button>
                         </motion.div>

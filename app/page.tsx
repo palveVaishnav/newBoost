@@ -1,11 +1,10 @@
 "use client"
-import { NavMenu } from "@/components/Menu";
+import { Menu } from "@/components/Menu";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Contact from "@/components/Contact";
 import FeatureCards from "@/components/FeatureCards";
 import Partners from "@/components/Partners";
-
 import Lenis from 'lenis'
 import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
@@ -16,12 +15,10 @@ import FAQ from "@/components/FAQ";
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis()
-
     function raf(time: number) {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
-
     requestAnimationFrame(raf)
   })
 
@@ -29,7 +26,7 @@ export default function Home() {
     <div
       className="h-auto mt-0 mb-40"
     >
-      <NavMenu />
+      <Menu />
       <HeroSection />
       <Partners />
       <Banner />
@@ -37,11 +34,8 @@ export default function Home() {
       <Features />
       <FAQ />
       <Testimonials />
-      <Contact />
-      <Footer />
+      {/* <Contact /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
-
-
-

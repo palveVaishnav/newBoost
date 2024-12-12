@@ -54,7 +54,7 @@ export default function Features() {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <div className="w-full max-w-6xl mx-auto p-8 flex items-center flex-col min-h-screen justify-center">
+        <div className="w-full max-w-6xl mx-auto p-8 flex items-center flex-col justify-center">
             <div className="text-center items-center max-w-xl space-y-4 gap-5"
                 ref={ref}
             >

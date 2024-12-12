@@ -1,6 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-export function NavMenu() {
+export function Menu() {
     return (
         <motion.div
             className="flex justify-between fixed top-0 w-full px-4 md:px-20 py-4 z-50 bg-gradient-to-t from-[#1e2125] to-[#0f1113]"
@@ -25,7 +25,7 @@ export function NavMenu() {
             <NavLinks />
             <div className="">
                 <button
-                    className="border px-2 py-1 md:px-4 md:py-2 rounded-md"
+                    className="border px-2 py-1 md:px-4 md:py-2 rounded-md bg-[#00ffd1] hover:bg-[#00ffd1] text-black"
                 >Start Saving</button>
             </div>
         </motion.div >

@@ -4,7 +4,7 @@ import { Globe } from './Globe';
 export default function HeroSection() {
     return (
         <section
-            className="w-full text-left flex md:px-20 flex-col min-h-screen justify-center gap-10 relative overflow-x-clip px-4"
+            className="w-full text-center items-center lg:text-left lg:items-start flex lg:px-20 flex-col min-h-screen justify-center gap-10 relative overflow-x-clip px-4"
         >
             <div
                 className="flex flex-col"
@@ -79,8 +79,9 @@ export default function HeroSection() {
                 Cut your cloud bill by up to 50% with our enterprise grade AI-driven automation.<br />
                 No risk, no contracts, and no technical work required.
             </motion.span>
+
             <motion.button
-                className="border w-fit px-12 py-4 rounded-md bg-purple-700 hover:bg-purple-900 text-lg font-semibold"
+                className="border w-fit md:px-8  px-4 py-2 rounded-md bg-[#00ffd1] hover:bg-[#00ffd1] text-black text-lg font-semibold"
                 initial={{
                     translateX: -60,
                     opacity: 0,
@@ -95,7 +96,7 @@ export default function HeroSection() {
                     duration: 2,
                 }}
                 whileHover={{
-                    y: -10,
+                    y: -4,
                     transition: {
                         duration: 0.1,
                         type: 'spring',
@@ -106,7 +107,8 @@ export default function HeroSection() {
             >
                 Start Saving
             </motion.button>
-            <div className="absolute right-0 md:-right-40 w-full h-screen -z-50 top-60">
+
+            <div className="absolute lg:-right-96 -z-50 top-40 w-full h-[150vh] border">
                 <Globe />
             </div>
         </section>
