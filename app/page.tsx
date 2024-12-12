@@ -34,8 +34,8 @@ export default function Home() {
       <Features />
       <FAQ />
       <Testimonials />
-      {/* <Contact /> */}
-      {/* <Footer /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }

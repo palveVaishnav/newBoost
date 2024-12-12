@@ -33,7 +33,7 @@ export default function FAQ() {
     ]
 
     const faqContainer = useRef(null);
-    const faqVisible = useInView(faqContainer);
+    const faqVisible = useInView(faqContainer, { once: true });
 
     return (
         <div className="w-full px-4 py-16 md:py-24 relative overflow-hidden">

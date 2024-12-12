@@ -6,11 +6,12 @@ import { useRef } from "react";
 
 export default function Contact() {
     const bannerContainer = useRef(null);
-    const bannerVisible = useInView(bannerContainer);
+    const bannerVisible = useInView(bannerContainer, { once: true });
 
     return (
         <div className="w-full px-4 md:py-16 mb-10">
-            <Card className="max-w-6xl mx-auto bg-[#00ffd1]/50 border-gray-800 overflow-hidden relative md:px-20 md:py-16" ref={bannerContainer}>
+            <div ref={bannerContainer}></div>
+            <Card className="max-w-6xl mx-auto bg-[#00ffd1]/50 border-gray-800 overflow-hidden relative md:px-20 md:py-16">
                 <div className="absolute inset-0 bg-[#00ffd1]/10 blur-3xl" />
                 {bannerVisible &&
                     <motion.div className="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8"

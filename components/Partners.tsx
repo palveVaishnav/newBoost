@@ -19,7 +19,7 @@ export default function Partners() {
     const isInView = useInView(ref, { once: true });
 
     return (
-        <Card className="w-full p-8 bg-inherit border-none md:mb-40">
+        <Card className="w-full p-8 bg-inherit border-none mb-5 md:mb-40">
             <div className="container mx-auto">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center"
                     ref={ref}

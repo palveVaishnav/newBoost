@@ -108,7 +108,7 @@ export default function HeroSection() {
                 Start Saving
             </motion.button>
 
-            <div className="absolute lg:-right-96 -z-50 top-40 w-full h-[150vh] border">
+            <div className="absolute lg:-right-96 -z-50 top-40 w-full h-[150vh]">
                 <Globe />
             </div>
         </section>
